@@ -1,0 +1,9 @@
+Azul Marinho (#1E2A38) – Cor principal para cabeçalhos, rodapés e seções importantes. Passa seriedade e confiabilidade.
+
+Cinza Claro (#E5E5E5) – Para fundos e áreas de conteúdo, oferecendo contraste suave e destacando os elementos principais.
+
+Verde Limão (#88D498) – Um toque vibrante para botões, links ou destaques importantes, trazendo um visual moderno e limpo.
+
+Branco (#FFFFFF) – Como base para o conteúdo, garantindo uma boa legibilidade e um design clean.
+
+Cinza Escuro (#4F4F4F) – Para texto, ícones ou gráficos sutis, criando uma hierarquia visual clara.
