@@ -87,8 +87,8 @@ aside svg{
 .topo{
     grid-column: 3/4;
     grid-row: 3/4;
-    margin-left: 40px;
-    margin-top: 500px;
+    margin-left: 80px;
+    margin-top: 490px;
 }
 .topo button{
     background-color: #1E2A38;
@@ -97,8 +97,9 @@ aside svg{
     font-weight: 600;
     border-radius: 12px;
     font-size: 20px;
-    padding: 20px;
+    padding: 10px;
     position: fixed;
+    display: none;
 }
 
 /* Apresentação sobre mim */
@@ -182,8 +183,50 @@ aside svg{
 }
 
 /* Contato */
-.contato{
+.contato {
+    grid-column: 1/4;
+    grid-row: 6/7;
+    text-align: center;
+    color: #1E2A38;
+    padding: 20px;
+}
 
+.contato-info {
+    margin-bottom: 20px;
+}
+
+.contato-info h3 {
+    margin: 10px 0;
+}
+
+.contato-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contato-form label {
+    margin: 5px 0;
+}
+
+.contato-form input,
+.contato-form textarea {
+    width: 70%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contato-form button {
+    background-color: #1E2A38;
+    font-family: poppins;
+    font-size: 20px;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
 }
 
 /* Página Projetos INDIVIDUAL */
@@ -196,5 +239,4 @@ aside svg{
     width: 1000px;
     height: 500px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-
 }
