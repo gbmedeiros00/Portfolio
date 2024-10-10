@@ -83,6 +83,24 @@ aside svg{
     color: #ffffff;
 }
 
+/* botão voltar ao topo */
+.topo{
+    grid-column: 3/4;
+    grid-row: 3/4;
+    margin-left: 40px;
+    margin-top: 500px;
+}
+.topo button{
+    background-color: #1E2A38;
+    color: #ffffff;
+    font-style: normal;
+    font-weight: 600;
+    border-radius: 12px;
+    font-size: 20px;
+    padding: 20px;
+    position: fixed;
+}
+
 /* Apresentação sobre mim */
 .apresentacao{
     grid-column: 2/3;
@@ -103,6 +121,12 @@ aside svg{
 .download-icon{
     padding-top: 12px;
     padding-right: 10px;
+}
+.apresentacao img{
+    width: 300px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 100%;
+    border: 5px solid #1E2A38;
 }
 
 /* Formção */
@@ -135,11 +159,10 @@ aside svg{
     width: 100%;
 }
 .projetos-box{  
-    background-color: #E5E5E5;
+    background-color: #f0efef;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     padding: 10px;
     margin-bottom: 50px;
-
 }
 .projetos-box h4{
     font-size: 25px;
@@ -156,4 +179,22 @@ aside svg{
 .projetos-box button a{
     color: #ffffff;
     text-decoration: none;
+}
+
+/* Contato */
+.contato{
+
+}
+
+/* Página Projetos INDIVIDUAL */
+.projetos-pagina{
+    grid-column: 2/3;
+    grid-row: 3/4;
+    margin-bottom: 100px;
+}
+.projetos-pagina img{
+    width: 1000px;
+    height: 500px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
 }
