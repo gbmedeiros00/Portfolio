@@ -2,16 +2,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
 body{
-    font-family: "Poppins", sans-serif;
-    padding: 0px;
-    margin: 0px;
-    background-color: #E5E5E5;
+    font-family: "Poppins", sans-serif !important;
+    padding: 0px !important;
+    margin: 0px !important;
+    background-color: #E5E5E5 !important;
 }
 h1{
-    font-size: 50px;
+    font-size: 50px !important;
+    font-weight: 700 !important;
+    
 }
 h3{
-    font-size: 35px;
+    font-size: 35px !important;
+    font-weight: 600 !important;
 }
 p{
     font-size: 20px;
@@ -21,7 +24,7 @@ li{
 }
 
 /* container grid */
-.container{
+.containerR{
     display: grid;
     grid-template-columns: 1fr 4fr 1fr;
     grid-template-rows: 150px 60px auto;
@@ -64,8 +67,19 @@ li{
     justify-content: space-around;
     margin: 100px;
 }
+.li2{
+    margin-left: 300px;
+}
 .header li{
     padding-right: 30px;
+}
+.navbar-toggler{
+    color: #ffffff !important;
+    border: none !important;
+    padding: 8px 24px !important;
+}
+.navbar.navbar-expand-lg{
+    width: 100% !important;
 }
 /* barra lateral */
 .aside{
@@ -73,30 +87,31 @@ li{
     background-color: #1E2A38;
     margin-top: 300px;
     max-width: 13%;
-    padding: 10px;
     position: fixed;
     margin-left: 10px;
-    border-radius: 2%;
+    border-radius: 10px;
 }
-aside svg{
+.aside svg{
     color: #ffffff;
+    margin: 10px 10px 10px 10px;
 }
 
 /* botão voltar ao topo */
 .topo{
     grid-column: 3/4;
     grid-row: 3/4;
-    margin-left: 10%;
-    margin-top: 180%;
+    margin-left: 15%;
+    margin-top: 170%;
 }
 .topo button{
     background-color: #1E2A38;
-    color: #ffffff;
-    font-style: normal;
-    font-weight: 600;
-    border-radius: 12px;
+    font-family: "Poppins";
     font-size: 20px;
-    padding: 10px;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 15px 20px;
+    cursor: pointer;
     position: fixed;
     display: none;
 }
@@ -109,18 +124,22 @@ aside svg{
     color: #1E2A38;
 }
 .download-button{
-    margin-left: 42%;
+    margin-left: 56vh;
     display: flex;
     background-color: #1E2A38;
+    font-family: "Poppins" !important;
+    font-size: 20px !important;
     color: #ffffff;
-    font-style: normal;
-    font-weight: 600;
-    border-radius: 12px;
-    font-size: 50px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+}
+.download-button p{
+    margin: 0 0 0 5px;
 }
 .download-icon{
-    padding-top: 12px;
-    padding-right: 10px;
+    padding-top: 3px;
 }
 .apresentacao img{
     width: 300px;
@@ -164,17 +183,15 @@ aside svg{
     padding: 10px;
     margin-bottom: 50px;
 }
-.projetos-box h4{
-    font-size: 25px;
-}
 .projetos-box button{
     background-color: #1E2A38;
-    color: #ffffff;
-    font-style: normal;
-    font-weight: 600;
-    border-radius: 12px;
+    font-family: "Poppins";
     font-size: 20px;
-    padding: 20px;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
 }
 .projetos-box button a{
     color: #ffffff;
@@ -219,7 +236,7 @@ aside svg{
 
 .contato-form button {
     background-color: #1E2A38;
-    font-family: poppins;
+    font-family: "Poppins";
     font-size: 20px;
     color: #ffffff;
     border: none;
@@ -240,65 +257,40 @@ aside svg{
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
-/* Responsividade */
-@media (min-width: 1200px) {
-    .header .menu-icon{
-        display: none;
+@media (max-width: 990px) {
+    #hamburguer{
+        margin-left: 10px;
     }
-}
-
-@media (max-width: 1200px) {
-    .header ul {
-        margin: 20px 0;
+    .li2{
+        margin-left: 0;
+        margin-right: 600px;
     }
-
     .aside {
         max-width: 25%;
-        margin-top: 200px;
+        margin-top: 700px;
     }
-
+    .header {
+        height: auto;
+    }
     .topo {
         margin-top: 100%;
     }
-
     .download-button {
         font-size: 40px;
     }
-
     .projetos-box {
         width: 80%;
         margin: 10px 0;
     }
 }
-@media (min-width: 768px) {
-    .header .menu-icon{
-        display: none;
-    }
-}
-
 @media (max-width: 768px) {
+    .li2{
+        margin-left: 0;
+        margin-right: 400px;
+    }
     .header img{
-        margin-left: 33%;
+        margin-left: 0;
     }
-    .header .menu-icon{
-        margin-left: 45%;
-    }
-    .hidden {
-        display: none;
-    }
-    
-    .menu-icon {
-        font-size: 30px;
-        cursor: pointer;
-        color: #ffffff;
-        margin-right: 20px;
-    }
-    
-    .header ul {
-        flex-direction: column;
-        display: none; /* Inicialmente oculto */
-    }
-    
     h1 {
         font-size: 40px;
     }
@@ -310,64 +302,40 @@ aside svg{
     p {
         font-size: 18px;
     }
-
-    .header {
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 10px;
-        height: 30%;
+    .download-button{
+        margin-left: 36%;
     }
-
+    .aside{
+        display: none;
+    }
+    .header {
+        height: auto;
+    }
     .aside {
         max-width: 40%;
         margin-top: 60%;
     }
-
     .contato-form input,
     .contato-form textarea {
         width: 90%;
     }
-
     .topo{
-        margin-top: 350%;
         display: none;
     }
-
     .projetos-box {
-        width: 90%; 
+        width: 100%; 
     }
 }
-
 @media (max-width: 480px) {
     .topo{
         display: none;
     }
     .header img{
-        margin-left: 25%;
+        margin-left: 0;
     }
-    .header .menu-icon{
-        margin-left: 45%;
-    }
-    .hidden {
-        display: none;
-    }
-    
-    .menu-icon {
-        font-size: 30px;
-        cursor: pointer;
-        color: #ffffff;
-        margin-right: 20px;
-    }
-    
-    .header ul {
-        flex-direction: column;
-        display: none; /* Inicialmente oculto */
-    }
-    
     h1 {
         font-size: 30px;
     }
-
     h3 {
         font-size: 25px;
     }
@@ -377,7 +345,6 @@ aside svg{
     .aside{
         display: none;
     }
-
     .download-button {
         font-size: 30px;
         margin-left: 35%;
