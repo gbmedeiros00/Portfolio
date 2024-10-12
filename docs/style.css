@@ -127,22 +127,18 @@ li{
     margin: 20px 0;
 }
 .download-button{
-    margin-left: 56vh;
-    display: flex;
     background-color: #1E2A38;
     font-family: "Poppins" !important;
     font-size: 20px !important;
     color: #ffffff;
     border: none;
     border-radius: 5px;
-    padding: 10px;
+    padding: 15px 10px 15px 10px;
     cursor: pointer;
-}
-.download-button p{
-    margin: 0 0 0 5px;
+    text-decoration: none;
 }
 .download-icon{
-    padding-top: 3px;
+    margin-top: 0px;
 }
 .apresentacao img{
     width: 300px;
@@ -153,7 +149,7 @@ li{
 
 /* Formção */
 .formacao{
-    grid-column: 1/4;
+    grid-column: 2/3;
     grid-row: 4/5;
     color: #1E2A38;
     text-align: center;
@@ -204,6 +200,7 @@ li{
 /* Contato */
 .contato {
     grid-column: 1/4;
+    grid-column: 2/3;
     grid-row: 6/7;
     text-align: center;
     color: #1E2A38;
@@ -246,6 +243,12 @@ li{
     border-radius: 5px;
     padding: 10px 20px;
     cursor: pointer;
+}
+.footer{
+    grid-column: 2/3;
+    grid-row: 8/9;
+    display: flex;
+    justify-content: center;
 }
 
 /* Página Projetos INDIVIDUAL */
@@ -305,9 +308,6 @@ li{
     p {
         font-size: 18px;
     }
-    .download-button{
-        margin-left: 36%;
-    }
     .aside{
         display: none;
     }
@@ -350,7 +350,6 @@ li{
     }
     .download-button {
         font-size: 30px;
-        margin-left: 35%;
     }
     .formacao ul{
         flex-wrap: wrap;
