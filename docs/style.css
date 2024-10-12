@@ -57,6 +57,9 @@ li{
     transition: 0.2s;
     opacity: 0.7;
 }
+.header nav{
+    justify-content: end;
+}
 .header img{
     height: 150px;
     width: 200px;
@@ -65,7 +68,6 @@ li{
 .header ul{
     display: flex;
     justify-content: space-around;
-    margin: 100px;
 }
 .li2{
     margin-left: 300px;
@@ -80,6 +82,9 @@ li{
 }
 .navbar.navbar-expand-lg{
     width: 100% !important;
+}
+.navbar-nav{
+    width: 100%;
 }
 /* barra lateral */
 .aside{
@@ -269,7 +274,7 @@ li{
     }
     .li2{
         margin-left: 0;
-        margin-right: 600px;
+        margin-right: 1500px;
     }
     .aside {
         max-width: 25%;
@@ -278,6 +283,9 @@ li{
     .header {
         height: auto;
     }
+    /* .navbar{
+        margin-right: 800px;
+    } */
     .topo {
         margin-top: 100%;
     }
