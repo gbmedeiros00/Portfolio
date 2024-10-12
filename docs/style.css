@@ -123,6 +123,9 @@ li{
     text-align: center;
     color: #1E2A38;
 }
+.apresentacao p{
+    margin: 20px 0;
+}
 .download-button{
     margin-left: 56vh;
     display: flex;
@@ -354,5 +357,10 @@ li{
     }
     .topo button {
         font-size: 16px;
+    }
+    .projetos-pagina img{
+        width: 430px;
+        height: 215px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     }
 }
