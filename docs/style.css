@@ -267,6 +267,17 @@ li{
     height: 500px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
+.projetos-pagina button{
+    background-color: #1E2A38;
+    font-family: "Poppins";
+    font-size: 20px;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 15px 20px;
+    cursor: pointer;
+    margin-bottom: 50px;
+}
 
 @media (max-width: 990px) {
     #hamburguer{
