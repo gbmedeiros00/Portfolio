@@ -32,6 +32,12 @@ p a{
     text-decoration: none;
 }
 
+li img{
+    width: 65px;
+    height: 65px;
+    margin: 0px 10px;
+}
+
 li {
     list-style-type: none;
 }
