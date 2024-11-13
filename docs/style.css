@@ -204,6 +204,11 @@ li{
     color: #ffffff;
     text-decoration: none;
 }
+.projetos-box img{
+    width: 200px;
+    height: 200px;
+    margin-bottom: 30px;
+}
 
 /* Contato */
 .contato {
