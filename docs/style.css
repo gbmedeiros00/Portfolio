@@ -1,33 +1,43 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
-body{
+body {
     font-family: "Poppins", sans-serif !important;
     padding: 0px !important;
     margin: 0px !important;
     background-color: #E5E5E5 !important;
 }
-h1{
+
+h1 {
     font-size: 50px !important;
     font-weight: 700 !important;
-    
+
 }
-h3{
+
+h3 {
     font-size: 35px !important;
     font-weight: 600 !important;
 }
-p{
+
+p {
     font-size: 20px;
 }
-a{
+
+a {
     font-size: 20px;
+    text-decoration: none;
 }
-li{
+
+p a{
+    text-decoration: none;
+}
+
+li {
     list-style-type: none;
 }
 
 /* container grid */
-.containerR{
+.containerR {
     display: grid;
     grid-template-columns: 1fr 4fr 1fr;
     grid-template-rows: 150px 60px auto;
@@ -35,7 +45,7 @@ li{
 }
 
 /* header */
-.header{
+.header {
     display: flex;
     grid-column: 1/4;
     position: fixed;
@@ -51,46 +61,57 @@ li{
     height: 16%;
     transition: top 0.3s ease;
 }
-.header a{
+
+.header a {
     color: #E5E5E5;
     text-decoration: none;
 }
-.header a:hover{
-    color: rgb(155, 207, 203); 
+
+.header a:hover {
+    color: rgb(155, 207, 203);
     transition: 0.2s;
     opacity: 0.7;
 }
-.header nav{
+
+.header nav {
     justify-content: end;
 }
-.header img{
+
+.header img {
     height: 150px;
     width: 200px;
     margin-left: 50px;
 }
-.header ul{
+
+.header ul {
     display: flex;
     justify-content: space-around;
 }
-.li2{
+
+.li2 {
     margin-left: 300px;
 }
-.header li{
+
+.header li {
     padding-right: 30px;
 }
-.navbar-toggler{
+
+.navbar-toggler {
     color: #ffffff !important;
     border: none !important;
     padding: 8px 24px !important;
 }
-.navbar.navbar-expand-lg{
+
+.navbar.navbar-expand-lg {
     width: 100% !important;
 }
-.navbar-nav{
+
+.navbar-nav {
     width: 100%;
 }
+
 /* barra lateral */
-.aside{
+.aside {
     align-content: space-around;
     background-color: #1E2A38;
     margin-top: 300px;
@@ -99,19 +120,21 @@ li{
     margin-left: 10px;
     border-radius: 10px;
 }
-.aside svg{
+
+.aside svg {
     color: #ffffff;
     margin: 10px 10px 10px 10px;
 }
 
 /* botão voltar ao topo */
-.topo{
+.topo {
     grid-column: 3/4;
     grid-row: 3/4;
     margin-left: 15%;
     margin-top: 170%;
 }
-.topo button{
+
+.topo button {
     background-color: #1E2A38;
     font-family: "Poppins";
     font-size: 20px;
@@ -125,16 +148,18 @@ li{
 }
 
 /* Apresentação sobre mim */
-.apresentacao{
+.apresentacao {
     grid-column: 2/3;
     grid-row: 3/4;
     text-align: center;
     color: #1E2A38;
 }
-.apresentacao p{
+
+.apresentacao p {
     margin: 20px 0;
 }
-.download-button{
+
+.download-button {
     background-color: #1E2A38;
     font-family: "Poppins" !important;
     font-size: 20px !important;
@@ -145,10 +170,12 @@ li{
     cursor: pointer;
     text-decoration: none;
 }
-.download-icon{
+
+.download-icon {
     margin-top: 0px;
 }
-.apresentacao img{
+
+.apresentacao img {
     width: 300px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     border-radius: 100%;
@@ -156,23 +183,25 @@ li{
 }
 
 /* Formção */
-.formacao{
+.formacao {
     grid-column: 2/3;
     grid-row: 4/5;
     color: #1E2A38;
     text-align: center;
 }
-.formacao ul{
+
+.formacao ul {
     display: flex;
     justify-content: center;
     padding: 0;
 }
-.formacao li{
+
+.formacao li {
     padding: 5px;
 }
 
 /* Projetos */
-.projetos{
+.projetos {
     display: flex;
     grid-column: 2/3;
     grid-row: 5/6;
@@ -181,16 +210,19 @@ li{
     justify-content: center;
     flex-wrap: wrap;
 }
-.projetos h1{
+
+.projetos h1 {
     width: 100%;
 }
-.projetos-box{  
+
+.projetos-box {
     background-color: #f0efef;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     padding: 10px;
     margin-bottom: 50px;
 }
-.projetos-box button{
+
+.projetos-box button {
     background-color: #1E2A38;
     font-family: "Poppins";
     font-size: 20px;
@@ -200,11 +232,13 @@ li{
     padding: 10px 20px;
     cursor: pointer;
 }
-.projetos-box button a{
+
+.projetos-box button a {
     color: #ffffff;
     text-decoration: none;
 }
-.projetos-box img{
+
+.projetos-box img {
     width: 200px;
     height: 200px;
     margin-bottom: 30px;
@@ -257,7 +291,8 @@ li{
     padding: 10px 20px;
     cursor: pointer;
 }
-.footer{
+
+.footer {
     grid-column: 2/3;
     grid-row: 8/9;
     display: flex;
@@ -265,17 +300,19 @@ li{
 }
 
 /* Página Projetos INDIVIDUAL */
-.projetos-pagina{
+.projetos-pagina {
     grid-column: 2/3;
     grid-row: 3/4;
     margin-bottom: 100px;
 }
-.projetos-pagina img{
+
+.projetos-pagina img {
     width: 1000px;
     height: 500px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
-.projetos-pagina button{
+
+.projetos-pagina button {
     background-color: #1E2A38;
     font-family: "Poppins";
     font-size: 20px;
@@ -288,42 +325,51 @@ li{
 }
 
 @media (max-width: 990px) {
-    #hamburguer{
+    #hamburguer {
         margin-left: 10px;
     }
-    .li2{
+
+    .li2 {
         margin-left: 0;
         margin-right: 1500px;
     }
+
     .aside {
         max-width: 25%;
         margin-top: 700px;
     }
+
     .header {
         height: auto;
     }
+
     /* .navbar{
         margin-right: 800px;
     } */
     .topo {
         margin-top: 100%;
     }
+
     .download-button {
         font-size: 40px;
     }
+
     .projetos-box {
         width: 80%;
         margin: 10px 0;
     }
 }
+
 @media (max-width: 768px) {
-    .li2{
+    .li2 {
         margin-left: 0;
         margin-right: 400px;
     }
-    .header img{
+
+    .header img {
         margin-left: 0;
     }
+
     h1 {
         font-size: 40px;
     }
@@ -335,56 +381,72 @@ li{
     p {
         font-size: 18px;
     }
-    .aside{
+
+    .aside {
         display: none;
     }
+
     .header {
         height: auto;
     }
+
     .aside {
         max-width: 40%;
         margin-top: 60%;
     }
+
     .contato-form input,
     .contato-form textarea {
         width: 90%;
     }
-    .topo{
+
+    .topo {
         display: none;
     }
+
     .projetos-box {
-        width: 100%; 
+        width: 100%;
     }
 }
+
 @media (max-width: 480px) {
-    .topo{
+    .topo {
         display: none;
     }
-    .header img{
+
+    .header img {
         margin-left: 0;
     }
+
     h1 {
         font-size: 30px;
     }
+
     h3 {
         font-size: 25px;
     }
-    .header{
+
+    .header {
         height: auto;
     }
-    .aside{
+
+    .aside {
         display: none;
     }
+
     .download-button {
         font-size: 30px;
     }
-    .formacao ul{
+
+    .formacao ul {
         flex-wrap: wrap;
     }
+
     .topo button {
         font-size: 16px;
     }
-    .projetos-pagina img{
+
+    .projetos-pagina img {
         width: 430px;
         height: 215px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
