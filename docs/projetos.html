@@ -7,7 +7,6 @@
     <title>Portfólio Gabriel Medeiros</title>
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="img/favicon.ico" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
@@ -16,77 +15,52 @@
 </head>
 
 <body>
+    <header id="header" class="header">
+        <p class="ms-5 mt-3 mb-3 simbolo">&lt;gcom/&gt;</p>
+        <nav class="navbar navbar-expand-lg">
+            <div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#hamburguer"
+                    aria-controls="hamburguer" aria-expanded="false" aria-label="Toggle navigation">
+
+                    ☰
+
+                </button>
+                <div class="collapse navbar-collapse me-auto" id="hamburguer">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item li2">
+                            <a href="/docs/index.html" class="nav-link">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/docs/certificacoes.html" class="nav-link">Certificações</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/docs/projetos.html" class="nav-link">Projetos</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
     <div class="containerR">
-        <header class="header">
-            <img src="img/imagem_2024-10-01_073020679-removebg-preview.png" alt="logo">
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                </ul>
-            </nav>
-        </header>
-        <aside class="aside">
-            <div>
-                <a href="https://github.com/gbmedeiros00">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor"
-                        class="bi bi-github" viewBox="0 0 16 16" style="margin-bottom:5px;color:#ffffff;">
-                        <path
-                            d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
-                    </svg>
-                </a>
+        <section id="projetos" class="projetos mt-5" style="margin-bottom: 30px;">
+            <h1>PROJETOS</h1>
+            <div class="projetos-box mt-5">
+                <img src="img/Logo API.png" alt="">
+                <h4>Projeto Acadêmico | Desempenho de Vereadores</h4>
+                <p>O desafio proposto é criar uma plataforma web que disponibilize informações sobre o desempenho dos vereadores da cidade durante o atual mandato. As informações estão disponibilizadas em https://camarasempapel.camarasjc.sp.gov.br/ O objetivo é oferecer aos eleitores dados claros e acessíveis que ajudem a tomar decisões informadas nas eleições municipais que se aproximam</p>
+                <a href="/docs/projeto.html"><button type="button">Saiba Mais</button></a>
             </div>
-            <div>
-                <a href="https://www.linkedin.com/in/gabriel-medeiros-516ab3325/">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor"
-                        class="bi bi-linkedin" viewBox="0 0 16 16" style="margin-bottom:5px;color:#ffffff;">
-                        <path
-                            d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z" />
-                    </svg>
-                </a>
+            <div class="projetos-box mt-5">
+                <img src="img/helpnei_logo (1).jpg" alt="">
+                <h4>Projeto Acadêmico | Dashboard de Indicadores</h4>
+                <p>O objetivo do projeto é desenvolver um Dashboard de Indicadores para monitorar e visualizar o impacto da plataforma ao longo do tempo. O painel apresentará métricas essenciais, como: número de lojas criadas, quantidade de usuários impactados e a distribuição geográfica das cidades atendidas. Com esses dados estruturados, será possível acompanhar o crescimento da iniciativa e fornecer informações valiosas para patrocinadores e stakeholders, garantindo maior transparência e embasamento estratégico para futuras decisões.</p>
+                <a href="/docs/projeto2.html"><button type="button">Saiba Mais</button></a>
             </div>
-            <div>
-                <a href="mailto:gabrielcalebe71@gmail.com">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor"
-                        class="bi bi-envelope-fill" viewBox="0 0 16 16">
-                        <path
-                            d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586zm3.436-.586L16 11.801V4.697z" />
-                    </svg>
-                </a>
-            </div>
-        </aside>
-        <section class="projetos-pagina">
-            <h1>Projeto Acadêmico | Desempenho de Vereadores</h1>
-            <p>O desafio proposto aos alunos é criar uma plataforma web que disponibilize informações sobre o
-                desempenho dos vereadores da cidade durante o atual mandato. As informações estão
-                disponibilizadas em https://camarasempapel.camarasjc.sp.gov.br/ O objetivo é oferecer aos
-                eleitores dados claros e acessíveis que ajudem a tomar decisões informadas nas eleições municipais
-                que se aproximam.</p>
-
-            <a href="https://github.com/Draco-Imperium/API_FATEC1"><button type="button">
-                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor"
-                        class="bi bi-github" viewBox="0 0 16 16" style="color:#ffffff;">
-                        <path
-                            d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
-                    </svg>
-                GitHub do Projeto</button></a>
-            <h3>Página Home</h3>
-            <p>Há um carrosel onde mostra as principais funcionalidades do site. Abaixo do carrossel, a página apresenta todos os vereadores do atual mandato, uma seção com as últimas proposições realizadas pelos vereadores, permitindo que os cidadãos acompanhem os novos debates e temas em discussão. Logo em seguida, a seção de últimos projetos de lei aprovados traz um resumo das leis mais recentes que foram aprovadas, com informações sobre seu impacto e objetivos.</p>
-            <img src="img/Projeto-API/Pagina Home.png">
-            <h3>Página Vereadores</h3>
-            <p>A página de Vereadores oferece uma visão rápida e prática de todos os vereadores eleitos. Cada vereador é listado com seu nome completo e o partido político ao qual pertence. Logo abaixo, há um botão que direciona para um perfil detalhado, onde o cidadão pode acessar mais informações.</p>
-            <img src="img/Projeto-API/Pagina Vereadores.png">
-            <h3>Página Perfil Individual do Vereador</h3>
-            <p>O perfil individual de cada vereador oferece uma visão completa de sua trajetória e atuação política. Na página, os visitantes podem encontrar uma biografia detalhada, destacando a formação, experiência profissional e carreira política do vereador. Também são apresentados todos as proposições e projetos de lei aprovados do vereador durante o mandato, permitindo que os eleitores acompanhem suas iniciativas e o impacto de suas ações no município.</p>
-            <img src="img/Projeto-API/Perfil.png">
-            <h3>Página Proposições</h3>
-            <p>A página de Proposições permite que os cidadãos tenham acesso a todas as proposições apresentadas pelos vereadores ao longo do mandato atual. Nesta página, é possível navegar por uma lista detalhada de todas as proposições, como moções, requerimentos, emendas e projetos de lei, permitindo uma visão abrangente do trabalho legislativo.</p>
-            <img src="img/Projeto-API/Proposições.png">
-            <h3>Página Gráficos</h3>
-            <p>A página de Gráficos oferece uma visão analítica e visual do trabalho realizado por cada vereador durante o mandato. Utilizando gráficos interativos e comparativos, a página permite aos cidadãos acompanhar e avaliar a performance dos seus representantes de maneira clara e objetiva.</p>
-            <img src="img/Projeto-API/Gráficos.png">
         </section>
-        <footer class="footer"><p>&copy; 2024 Gabriel Calebe. Todos os direitos reservados.</p></footer>
+    </div>
+    <footer class="footer">
+        <p>&copy; 2025 Gabriel Calebe. Todos os direitos reservados.</p>
+    </footer>
+    </div>
 </body>
-<script src="header-scroll.js"></script>
-
 </html>
