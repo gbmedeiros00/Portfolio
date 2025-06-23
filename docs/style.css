@@ -189,7 +189,7 @@ hr {
 .projetos {
     display: flex;
     grid-column: 2/3;
-    grid-row: 1/6;
+    grid-row: 5/6;
     color: #1E2A38;
     text-align: center;
     justify-content: center;
@@ -233,7 +233,7 @@ hr {
 .contato {
     grid-column: 1/4;
     grid-column: 2/3;
-    grid-row: 6/7;
+    grid-row: 7/8;
     text-align: center;
     color: #1E2A38;
     padding: 20px;
@@ -291,10 +291,11 @@ hr {
 }
 
 .certificados{
-    grid-row: 2/4;
+    grid-row: 6/7;
     grid-column: 2/3;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .tituloo {
